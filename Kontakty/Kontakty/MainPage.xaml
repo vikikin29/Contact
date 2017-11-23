@@ -4,8 +4,50 @@
              xmlns:local="clr-namespace:Kontakty"
              x:Class="Kontakty.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+
+        <Image 
+            Source="https://productmate.de/uploads/channel/image/2744e921-4a51-41f8-8594-889f37f847c2/PRODUCTMATE_Channel_Hamburg_Alkohol_Unisex.png"
+            Aspect="AspectFill"
+            VerticalOptions="StartAndExpand" 
+            HeightRequest="200"
+            Grid.Column="0"
+            Grid.Row="0"
+        />
+
+        <Image 
+            Source="http://icons.iconarchive.com/icons/blackvariant/button-ui-system-apps/512/Contacts-icon.png"
+            Aspect="AspectFit"
+            
+            HorizontalOptions="Start"
+            HeightRequest="200"
+            WidthRequest="360"
+            Grid.Column="0"
+            Grid.Row="0"
+        />
+
+        <BoxView
+            Color="#A90003"
+            Grid.Column="0"
+            Grid.Row="1"
+            WidthRequest="1000"
+        />
+        <Label
+            Text="Viktor Kubík"
+            FontSize="40"
+            FontFamily="Comic Sans MS"
+            Grid.Column="0"
+            Grid.Row="1"
+        />
+
+
+    </Grid>
 
 </ContentPage>

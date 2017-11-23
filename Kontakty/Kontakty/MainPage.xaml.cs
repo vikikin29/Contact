@@ -12,6 +12,8 @@ namespace Kontakty
         public MainPage()
         {
             InitializeComponent();
+            
+            
         }
     }
 }
