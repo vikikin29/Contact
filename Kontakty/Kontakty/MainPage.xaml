@@ -6,11 +6,19 @@
 
     <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="3*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <Image 
@@ -18,8 +26,10 @@
             Aspect="AspectFill"
             VerticalOptions="StartAndExpand" 
             HeightRequest="200"
+            Grid.ColumnSpan="3"
             Grid.Column="0"
             Grid.Row="0"
+            Grid.RowSpan="3"
         />
 
         <Image 
@@ -30,23 +40,84 @@
             HeightRequest="200"
             WidthRequest="360"
             Grid.Column="0"
+            Grid.ColumnSpan="3"
             Grid.Row="0"
+            Grid.RowSpan="3"
         />
 
         <BoxView
             Color="#A90003"
             Grid.Column="0"
-            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            Grid.Row="3"
             WidthRequest="1000"
         />
         <Label
             Text="Viktor Kubík"
-            FontSize="40"
-            FontFamily="Comic Sans MS"
+            FontSize="30"
+            TextColor="White"
             Grid.Column="0"
-            Grid.Row="1"
+            HorizontalOptions="Center"
+            Grid.ColumnSpan="3"
+            Grid.Row="3"
         />
 
+        <Label
+            Text="Phone Number"
+            FontSize="16"
+            TextColor="#A90003"
+            Grid.Column= "0"
+            HorizontalOptions="Center"
+            Grid.ColumnSpan="3"
+            Grid.Row="4"
+        />
+        <Label
+            Text="+420 703 366 966"
+            FontSize="35"
+            TextColor="Gray"
+            Grid.Column= "0"
+            HorizontalOptions="Center"
+            Grid.ColumnSpan="3"
+            Grid.Row="4"
+        />
+
+        <Label
+            Text="Mail"
+            FontSize="16"
+            TextColor="#A90003"
+            Grid.Column= "0"
+            HorizontalOptions="Center"
+            Grid.ColumnSpan="3"
+            Grid.Row="5"
+        />
+        <Label
+            Text="BAGETAK@SEZNAM.CZ"
+            FontSize="26"
+            TextColor="Gray"
+            Grid.Column= "0"
+            HorizontalOptions="Center"
+            Grid.ColumnSpan="3"
+            Grid.Row="5"
+        />
+
+        <Label
+            Text="Adress"
+            FontSize="16"
+            TextColor="#A90003"
+            Grid.Column= "0"
+            Grid.ColumnSpan="3"
+            HorizontalOptions="Center"
+            Grid.Row="6"
+        />
+        <Label
+            Text="CIMICKA 420"
+            FontSize="26"
+            TextColor="Gray"
+            Grid.Column= "0"
+            HorizontalOptions="Center"
+            Grid.ColumnSpan="3"
+            Grid.Row="6"
+        />
 
     </Grid>
 
